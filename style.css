@@ -1,0 +1,44 @@
+:root{
+    --background:#EFD9CE;
+    --lines:#25283D;
+    --darts:#8F3985;
+}
+body{
+    background-color: var(--background);
+}
+.shape{
+    width: 500px;
+    height: 500px;
+    border: 3px solid var(--lines);
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+#square{
+    overflow: hidden;
+    border-radius: 3px;
+}
+#circle{
+    border-radius: 50%;
+    bottom: 506px;
+}
+#dart{
+    width: 5px;
+    height: 5px;
+    background-color: var(--darts);
+    border-radius: 50%;
+    position: absolute;
+}
+#start{
+    position: relative;
+    bottom: 500px;
+    border: var(--lines) 3px solid;
+    border-radius: 3px;
+    background-color: inherit;
+    color: var(--lines);
+}
+#piOutput{
+    position: relative;
+    bottom: 500px;
+    color: var(--lines);
+}
